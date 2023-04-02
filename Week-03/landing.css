@@ -1,0 +1,31 @@
+head {
+    background-color: #373867;
+    position: relative;
+}
+body {
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell;
+}
+h1 {
+    font-size: 60px
+}
+h2 {
+    color: ;
+    font-size: 35px; 
+}
+
+#navbar {
+    display: block;
+    background-color: #373867;
+    text-decoration: underline;
+    text-align: center;
+    color: #C4C4C4;
+    font-size: 35px;
+    position: left;
+}
+nav h3 {
+    color:#46A37C;
+    text-decoration-style:none;
+}
+nav a {
+    color: none;
+}
