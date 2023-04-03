@@ -1,0 +1,139 @@
+header {
+    background-color: #373867;
+    position: fixed;
+    display: block;
+    margin:0px;
+    padding: 0px;
+    width: 1450px;
+    height: 100px;
+    z-index: 1;
+}
+body {
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell;
+}
+
+main {
+    position: relative;
+    top: 28px;
+}
+.container-one {
+    position: relative;
+    display: inline-block;
+}
+.container-one h1 {
+    font-size: 40px;
+    color: #2F3058;
+    margin-left: 400px;
+    margin-top: 150px;
+    font-weight: 700;
+    line-height: 30px;
+    font-style: normal;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.container-one h2 {
+    color: #2F3058;
+    position: relative;
+    width: 442px;
+    height: 137px;
+    left: 400px;
+    bottom: 37px;
+    font-weight: 700;
+    line-height: 10;
+    padding: 0px;
+}
+.container-one p {
+    font-size: 16px;
+    color: #000000BF;
+    position: relative;
+    line-height: 21px;
+    text-indent: 25px;
+    bottom: 481px;
+    width: 363px;
+    left: 400px;
+}
+.container-one img {
+    width: 453px;
+    height: 416px;
+    position: relative;
+    bottom: 162px;
+    left: 833px;
+}
+#navbar {
+    display: block;
+    background-color: #373867;
+    text-align: left;
+    font-size: 25px;
+    color: #C4C4C4;
+    font-weight: 500;
+    position: fixed;
+    width: 250px;
+    height: 1300px;
+    top: 80px;
+    text-decoration: none;
+    padding-top: 60px;
+}
+nav img + li {
+    color:#46A37C;
+    text-decoration-style:none;
+    
+}
+nav ul li:nth-child(4) {
+    color:#46A37C;
+    text-decoration-style:none;
+    border: 0px;
+    
+}
+nav address {
+    color: #C4C4C4;
+    font-size: 14px;
+    position: relative;
+    left:38px;
+    border-bottom: solid 2px #C4C4C4; width: 168px;
+}
+nav .imagen-01 {
+    position: relative;
+    bottom: 44px;
+    left: 203px;
+    width: 20px;
+}
+aside ul li {
+    position: relative;
+    border-bottom: 2px solid #C4C4C4; width: 18px;
+    padding: 8px;
+    width: 200px;
+}
+nav a {
+    color:#C4C4C4;
+    position: relative;
+    left: 2px;
+}
+.imagen-02 {
+    position: relative;
+    top: 28px;
+    left: 8px;
+}
+.imagen-03 {
+    position: relative;
+    top: 29px;
+    left: 8px;
+}
+.imagen-04 {
+    position: relative;
+    top:26px;
+    left: 8px;
+}
+header .logo-01 {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    left: 390px;
+    top: 10px;
+}
+header .logo-02 {
+    position: relative;
+    width: 207;
+    height: 50px;
+    left: 400px;
+    top: 10px;
+}
