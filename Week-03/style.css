@@ -20,21 +20,42 @@ aside {
     background-color: #373867;
 }
 .navbar {
+    position: relative;
     text-align: left;
-    font-size: 16px;
-    
+    font-size: 17px; 
     color: #C4C4C4;
-
 }
+.logo-03 {
+    position: absolute;
+    top: 105px;
+    right: 30px;
+ }
+ .logo-04 {
+    position: absolute;
+    bottom: 100px;
+    left: 0px;
+ }
+ .logo-05 {
+    position: absolute;
+    bottom: 60px;
+    left: 0px;
+ }
+ .logo-06 {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+ }
 .navbar ul li {
     padding-left: 15px;
     border-bottom: 1px solid #C4C4C4; width: 125px; left: 10px;  
     font-weight: 500; 
+    line-height: 30px;
 }
 .navbar address {
+    padding:10px;
     padding-left: 25px;
     border-bottom: 1px solid #C4C4C4; width: 175px; left: 10px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 300;
 }
 .navbar ul li:nth-child(4) {
@@ -50,24 +71,24 @@ aside {
 .navbar a {
     color:#C4C4C4;
 }
+
 main {
     position: relative;
     margin-left: 250px;
     top: 100px;
-    width: 1000px;
+    width: 900px;
     background-color: white ;
 }
 .section {
-    border-bottom: 2px solid chocolate; 
+    border-bottom: 4px solid #D9D9D9; 
     position: relative;
-    height: 450px;
-    width: 900px;
+    height: 550px;
+    width: 1000px;
     font-size: 16px;
 }
 h1 {
-    
     font-size: 50px;
-    font-weight: 2000px;
+    font-weight: 700;
     color: #2F3058;
 }
 .section h2{
@@ -78,13 +99,13 @@ h1 {
 }
 .imagen-01 {
     position: absolute;
-    top: 35px;
+    top: 45px;
     right: 0px;
-    width: 450px;
-    height: 350px;
+    width: 500px;
+    height: 380px;
 }
 .paragraph1 {
-    padding-top: 25px;
+    padding-top: 45px;
     width: 450px;
     color: #000000BF;
 }
@@ -105,10 +126,10 @@ h1 {
     
 }
 .notes, .calendar {
-    top: 75px;
+    top: 100px;
 }
 .group, .person {
-    bottom: 75px;
+    bottom: 100px;
 }
 .calendar, .person{
     right: 25px;
@@ -119,7 +140,7 @@ h1 {
     width: 300px;
     height: 100px;
 }
-.notes1 h3 {
+.notes1 >h3 {
     position: absolute;
     top:25px;
     font-size: 18px;
@@ -135,7 +156,7 @@ h1 {
     width: 300px;
     height: 100px;
 }
-.calendar1 h3 {
+.calendar1 >h3 {
     position: absolute;
     top:25px;
     font-size: 18px;
@@ -151,7 +172,7 @@ h1 {
     width: 300px;
     height: 100px;
 }
-.group1 h3 {
+.group1 >h3 {
     position: absolute;
     bottom:60px;
     font-size: 18px;
@@ -167,7 +188,7 @@ h1 {
     width: 300px;
     height: 100px;
 }
-.person1 h3 {
+.person1 >h3 {
     position: absolute;
     bottom:60px;
     font-size: 18px;
@@ -182,80 +203,165 @@ h1 {
     width: 100px;
     height: 100px;
 }
-
-////.contactus h2 {
+.contactus {
+    position: relative;
+    height: 600px;
+}
+.contactus form {
+    position: relative;
+    width: 700px;
+    height: 550px;
+}
+.name {
+    display: inline-block;
+    width: 300px;
+    height: 60px;
+    color:#2F3058;
+    font-weight: 700;
+}
+.name label {
+    display: block;
+}
+.name input {
+    border-color: #373867;
+    width: 250px;
+}
+.contactus h2 {
+    padding: 20px;
+    padding-left: 0px;
     font-size: 25px;
-    font-weight: 1000px;
+    font-weight: 500;
     color: #2F3058;
 }
-.data {
-    padding: 25px;
-    font-size: 
-    font-weight: 1000px;
-    color: #2F3058;
+
+.last-name {
+    display: inline-block;
+    width: 300px;
+    height: 60px;
+    color:#2F3058;
+    font-weight: 700;
+}
+.last-name label {
+    display: block;
+}
+.last-name input {
+    border-color: #373867;
+    width: 250px;
+}
+.email {
+    width: 300px;
+    height: 50px;
+    color:#2F3058;
+    font-weight: 700;
+}
+.email label {
+    display: block;
+}
+.email input {
+    border-color: #373867;
+    width: 250px;
 }
 .check {
-    font-size: 18px;
+    width: 350px;
+    height: 50px;
+}
+.check-01 {
+    display: block;
+}
+.check-02 {
+    display: block;
+}
+.check-03 {
+    display: block;
+}
+
+.message-01 {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 700px;
+    height: 100px;
+    border-color: #373867;
+}
+.message-02 {
+    display: inline-block;
+    font-size: 10px;
+}
+.button-01 { 
+    position:absolute;
+    right: 100px;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #373867;
+}
+.button-02 { 
+    position:absolute;
+    right: 10px;
+    width: 75px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: #373867;
+    color: #373867;
+}
+.aboutus {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    color: #6D6D6D;
+}
+.aboutus article {
+    position: relative;
+    width: 900px;
+    height: 150px;
+    font-size: 15px;
+}
+.aboutus > h2 {
+    top: 0px;
+    margin-top: 0px;
+    font-size: 30px;
     font-weight: 1000px;
     color: #2F3058;
 }
-.check h2 {
-
-} ////
-.aboutus {
-    position: relative;
-    width: 300px;
-    height: 100px;
-    color: #6D6D6D;
-}
-.aboutus > h2 {
-    font-size: 30px;
-    font-weight: 1000px;
-    top: 10px;
+.aboutus h3 {
+    font-size: 18px;
+    font-weight: 500;
     color: #2F3058;
 }
 .thoughts {
-    
-    top:100px;
-    font-size: 20px;
-    font-weight: 1000px;
-    color: #2F3058;
+    position: absolute;
+    bottom: 32px;
 }
-.family { ------------------------------------------CORREGIR H3 X2
-    position: relative;
-    bottom: 20px;
-    left:0px;
-    font-size: 20px;
-    font-weight: 1000px;
-    color: #2F3058;
+.family {
+    position: absolute;
+    top: 25px;
 }
 .paragraph2 {
     position: absolute;
-    top: 60px;
+    top: 0px;
 }
 .paragraph3 {
     position: absolute;
     display: block;
     margin-left: 240px;
     margin-right: 350px;
-    bottom: 100px;
+    bottom: 0px;
 }
 .paragraph4 {
     position:absolute;
     bottom: 20px;
-    margin-right: 475px;
+    margin-right: 350px;
 }
 
 .imagen-02 {
     position: absolute;
-    bottom:90px;
+    bottom:0px;
     left:0px;
     width: 220px;
     height: 180px;
 }
 .imagen-03 {
     position: absolute;
-    bottom:40px;
+    top: 0px;
     right:0px;
     width: 350px;
     height: 220px;
@@ -266,7 +372,7 @@ h1 {
 }
 .activities {
     position: absolute;
-    top: 65px;
+    top:90px;
     width: 300px;
     height: 130px;
     border: 2px solid;
@@ -277,7 +383,7 @@ h1 {
 .activities ol {
     margin-left: 40px;
 }
-.activities h3 {
+.activities >h3 {
     margin-left: 25px;
     font-size: 20px;
     font-weight: 700px;
@@ -285,7 +391,7 @@ h1 {
 }
 .black {
     position: absolute;
-    top: 65px;
+    top: 90px;
     width: 300px;
     height: 130px;
     padding-left: 0px;
@@ -297,7 +403,7 @@ h1 {
 .black ol {
     margin-left: 40px;
 }
-.black h3 {
+.black >h3 {
     margin-left: 25px;
     font-size: 20px;
     font-weight: 700px;
@@ -305,7 +411,7 @@ h1 {
 }
 .classic {
     position: absolute;
-    bottom: 110px;
+    bottom: 150px;
     width: 300px;
     height: 130px;
     border: 2px solid;
@@ -316,7 +422,7 @@ h1 {
 .classic ol {
     margin-left: 40px;
 }
-.classic h3 {
+.classic >h3 {
     margin-left: 25px;
     font-size: 20px;
     font-weight: 700px;
@@ -324,7 +430,7 @@ h1 {
 }
 .only-classes {
     position: absolute;
-    bottom: 110px;
+    bottom: 150px;
     width: 300px;           
     height: 130px;
     padding-left: 0px;
@@ -336,7 +442,7 @@ h1 {
 .only-classes ol {
     margin-left: 40px;
 }
-.only-classes h3 {
+.only-classes >h3 {
     margin-left: 25px;
     font-size: 20px;
     font-weight: 700px;
