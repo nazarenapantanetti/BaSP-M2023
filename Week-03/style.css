@@ -61,8 +61,8 @@ main {
     border-bottom: 2px solid chocolate; 
     position: relative;
     height: 450px;
+    width: 900px;
     font-size: 16px;
-
 }
 h1 {
     
@@ -72,20 +72,18 @@ h1 {
 }
 .section h2{
     padding-top: 25px;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 1000px;
     color:#2F3058;
 }
-.imagen {
+.imagen-01 {
     position: absolute;
-}
-.pesas {
     top: 35px;
-    right: 50px;
+    right: 0px;
     width: 450px;
     height: 350px;
 }
-.first {
+.paragraph1 {
     padding-top: 25px;
     width: 450px;
     color: #000000BF;
@@ -184,21 +182,168 @@ h1 {
     width: 100px;
     height: 100px;
 }
-.contactus h2 {
-    color: #2F3058;
-    font-size: 30px;
+
+////.contactus h2 {
+    font-size: 25px;
     font-weight: 1000px;
-    
+    color: #2F3058;
 }
-.place1, .place3 {
-    display: inline-block;
+.data {
+    padding: 25px;
+    font-size: 
+    font-weight: 1000px;
+    color: #2F3058;
 }
-.place2
+.check {
+    font-size: 18px;
+    font-weight: 1000px;
+    color: #2F3058;
+}
+.check h2 {
+
+} ////
 .aboutus {
+    position: relative;
+    width: 300px;
+    height: 100px;
     color: #6D6D6D;
 }
-.gym {
+.aboutus > h2 {
+    font-size: 30px;
+    font-weight: 1000px;
+    top: 10px;
+    color: #2F3058;
+}
+.thoughts {
+    
+    top:100px;
+    font-size: 20px;
+    font-weight: 1000px;
+    color: #2F3058;
+}
+.family { ------------------------------------------CORREGIR H3 X2
+    position: relative;
+    bottom: 20px;
+    left:0px;
+    font-size: 20px;
+    font-weight: 1000px;
+    color: #2F3058;
+}
+.paragraph2 {
+    position: absolute;
+    top: 60px;
+}
+.paragraph3 {
+    position: absolute;
+    display: block;
+    margin-left: 240px;
+    margin-right: 350px;
+    bottom: 100px;
+}
+.paragraph4 {
+    position:absolute;
+    bottom: 20px;
+    margin-right: 475px;
+}
 
+.imagen-02 {
+    position: absolute;
+    bottom:90px;
+    left:0px;
+    width: 220px;
+    height: 180px;
+}
+.imagen-03 {
+    position: absolute;
+    bottom:40px;
+    right:0px;
+    width: 350px;
+    height: 220px;
+}
+.gym {
+    display: inline-block;
+    font-size: 14px;
+}
+.activities {
+    position: absolute;
+    top: 65px;
+    width: 300px;
+    height: 130px;
+    border: 2px solid;
+    padding-left: 0px;
+    border-color: #49A37B;
+    border-radius: 15px;
+} 
+.activities ol {
+    margin-left: 40px;
+}
+.activities h3 {
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: 700px;
+    color: #2F3058;
+}
+.black {
+    position: absolute;
+    top: 65px;
+    width: 300px;
+    height: 130px;
+    padding-left: 0px;
+    border: 2px solid;
+    border-color: #49A37B;
+    border-radius: 15px;
+}
+
+.black ol {
+    margin-left: 40px;
+}
+.black h3 {
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: 700px;
+    color: #2F3058;
+}
+.classic {
+    position: absolute;
+    bottom: 110px;
+    width: 300px;
+    height: 130px;
+    border: 2px solid;
+    padding-left: 0px;
+    border-color: #49A37B;
+    border-radius: 15px;
+}
+.classic ol {
+    margin-left: 40px;
+}
+.classic h3 {
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: 700px;
+    color: #2F3058;
+}
+.only-classes {
+    position: absolute;
+    bottom: 110px;
+    width: 300px;           
+    height: 130px;
+    padding-left: 0px;
+    border: 2px solid;
+    border-color: #49A37B;
+    border-radius: 15px;
+}
+
+.only-classes ol {
+    margin-left: 40px;
+}
+.only-classes h3 {
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: 700px;
+    color: #2F3058;
+}
+.black, .only-classes{
+    right: 100px;
 }
 footer {
     position: absolute;

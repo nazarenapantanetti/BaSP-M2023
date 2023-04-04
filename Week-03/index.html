@@ -2,7 +2,7 @@
 <html> 
     <head>
         <link rel="stylesheet" href="..\reset.css">
-        <link rel="stylesheet" href="..\Week-03\styleOK.css">
+        <link rel="stylesheet" href="..\Week-03\style.css">
         <title>html model</title>
         <meta name="author" content="Nazarena">
         <meta name="description=" content="html version of landing desktop from Figma">
@@ -49,8 +49,8 @@
             <section class="section megarocket">
                 <h1>MegaRocket GYM</h1>
                 <h2>Launch your fitness journey con megarocket</h2 class= subtitle-01>
-                <img src="..\Assets\Images\gym-01.png" alt="dumbbells image" class="imagen pesas">
-                <div class="paragraph first">
+                <img src="..\Assets\Images\gym-01.png" alt="dumbbells image" class="imagen-01">
+                <div class="paragraph1">
                     <p>
                         Welcome to Megarocket SA, where we believe in creating a holistic approach to fitness. 
                         Our gym is a state-of-the-art facility that caters to all your fitness needs. Whether 
@@ -111,21 +111,25 @@
                 <form>
                     <article>
                         <h2>Contact us</h2>
-                        <label>Name</label class= place1>
-                        <input type="text" placeholder="Name">
-                        <label>Last name</label class="place2">
-                        <input type="text" placeholder="last name">
-                        <label>Email</label class=place3>
-                        <input type="email" placeholder="Email">
+                        <div class="form data">
+                            <label>Name</label class= place1>
+                            <input type="text" placeholder="Name">
+                            <label>Last name</label class="place2">
+                            <input type="text" placeholder="last name">
+                            <label>Email</label class=place3>
+                            <input type="email" placeholder="Email">
+                        </div>
                     </article>
                     <article>
-                        <h2>Motive</h2>
-                        <input type="checkbox">
-                        <label>I want to know about memberships and costs.</label>
-                        <input type="checkbox">
-                        <label>I want to make a question or a suggestion.</label>
-                        <input type="checkbox">
-                        <label>I want to make a claim.</label>
+                        <div class="form check">
+                            <h2>Motive</h2>
+                            <input type="checkbox">
+                            <label>I want to know about memberships and costs.</label>
+                            <input type="checkbox">
+                            <label>I want to make a question or a suggestion.</label>
+                            <input type="checkbox">
+                            <label>I want to make a claim.</label>
+                        </div>
                     </article>
                     <article>
                         <h2>Message</h2>
@@ -138,41 +142,47 @@
             <section class="section aboutus">
                 <h2>About us</h2>
                 <article>
-                    <p>
-                    Megarocket SA gym was founded in 1995 by a former Olympic athlete named Max Strong. 
-                    Max had always been passionate about fitness and wanted to create a gym that would 
-                    provide people with a welcoming and inclusive environment to pursue their fitness goals.
-                    </p>
-                    <p>
-                    Over the years, Megarocket SA grew into one of the most popular gyms in the city, with a thriving
-                    community of members who were passionate about fitness. Max continued to run the gym until he
-                    retired in 2020.
-                    </p>
+                    <div class="paragraph2">
+                        <p>
+                        Megarocket SA gym was founded in 1995 by a former Olympic athlete named Max Strong. 
+                        Max had always been passionate about fitness and wanted to create a gym that would 
+                        provide people with a welcoming and inclusive environment to pursue their fitness goals.
+                        </p>
+                        <p>
+                        Over the years, Megarocket SA grew into one of the most popular gyms in the city, with a thriving
+                        community of members who were passionate about fitness. Max continued to run the gym until he
+                        retired in 2020.
+                        </p>
+                   </div>
                 </article>
                 <article>
-                    <h3>Our thoughts</h3>
-                    <img src="..\Assets\Images\gym-02.png" alt="training person image">
-                    <p>
-                    At Megarocket SA, we believe that fitness is not just a hobby, it's a lifelong journey.
-                    Our expert trainers are committed to helping you achieve your goals.
-                    </p>
-                    <p> 
-                    We believe that fitness is not a one-size-fits-all solution. That's why we offer a wide
-                    range of classes and services to cater to every individual's unique needs and preferences.
-                    </p>
+                    <h3>Our thoughts</h3 class= "thoughts">
+                    <img src="..\Assets\Images\gym-02.png" alt="training person image" class="imagen-02">
+                    <div class="paragraph3">
+                        <p>
+                        At Megarocket SA, we believe that fitness is not just a hobby, it's a lifelong journey.
+                        Our expert trainers are committed to helping you achieve your goals.
+                        </p>
+                        <p> 
+                        We believe that fitness is not a one-size-fits-all solution. That's why we offer a wide
+                        range of classes and services to cater to every individual's unique needs and preferences.
+                        </p>
+                    </div> 
                 </article>
                 <article>
-                    <h3>We are a family</h3>
-                    <p>
-                    We're not just a gym - we're a family. At Megarocket SA, you'll find a supportive and
-                    welcoming community that will keep you motivated  and inspired to reach your goals.
-                    </p>
-                    <img src="..\Assets\Images\gym-03.png" alt="gym image">
+                    <h3>We are a family</h3 class="family">
+                    <div class="paragraph4">
+                        <p>
+                        We're not just a gym - we're a family. At Megarocket SA, you'll find a supportive and
+                        welcoming community that will keep you motivated  and inspired to reach your goals.
+                        </p>
+                    </div>
+                    <img src="..\Assets\Images\gym-03.png" alt="gym image" class="imagen-03">
                 </article>
             </section>
             <section class="section gym">
                 <h2>GYM section</h2>
-                <article>
+                <article class="activities">
                     <h3>Activities</h3>
                     <ol>
                         <li>Crossfit</li>
@@ -181,7 +191,7 @@
                         <li>Musculation</li>
                     </ol>
                 </article>
-                <article>
+                <article class="classic">
                     <h3>Classic Membership</h3>
                     <ol>
                         <li>Free access to musculation room.</li>
@@ -189,7 +199,7 @@
                         <li>Grid visualization</li>
                     </ol>
                 </article>
-                <article>   
+                <article class="black">   
                     <h3>Black Membership</h3>
                     <ol>
                         <li>Free access to musculation room.</li>
@@ -198,7 +208,7 @@
                         <li> Grid visualization.</li>
                     </ol>
                 </article>
-                <article>
+                <article class="only-classes">
                     <h3>Only classes membership</h3>
                     <ol>
                         <li>Free access to classes with pre-inscription.</li>
