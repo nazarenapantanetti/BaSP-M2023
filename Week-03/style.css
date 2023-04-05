@@ -22,49 +22,74 @@ aside {
 .navbar {
     position: relative;
     text-align: left;
-    font-size: 17px; 
+    font-size: 23px; 
+    font-weight: 400;
     color: #C4C4C4;
+}
+.logo-01 {
+    display: block;
+    margin-left: 75px;
+    margin-top: 25px;
+    width: 35px;
+    height: 35px;
+}
+.logo-02 {
+    display: block;
+    margin-left: 40px;
+    margin-top: 7px;
 }
 .logo-03 {
     position: absolute;
-    top: 105px;
+    top: 120px;
     right: 30px;
  }
  .logo-04 {
     position: absolute;
-    bottom: 100px;
+    bottom: 110px;
     left: 0px;
  }
  .logo-05 {
     position: absolute;
-    bottom: 60px;
+    bottom: 68px;
     left: 0px;
  }
  .logo-06 {
     position: absolute;
-    bottom: 20px;
+    bottom: 24px;
     left: 0px;
  }
 .navbar ul li {
-    padding-left: 15px;
-    border-bottom: 1px solid #C4C4C4; width: 125px; left: 10px;  
+    margin-left: 15px;
+    padding-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #C4C4C4;
+    width: 125px; 
+    left: 10px;  
     font-weight: 500; 
     line-height: 30px;
 }
 .navbar address {
+    margin-left: 5px;
     padding:10px;
     padding-left: 25px;
-    border-bottom: 1px solid #C4C4C4; width: 175px; left: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #C4C4C4; 
+    width: 175px; 
+    left: 10px;
     font-size: 13px;
     font-weight: 300;
 }
 .navbar ul li:nth-child(4) {
+    border: 0px;
     color:#46A37C;
     text-decoration-style:none;
-    border: 0px;
+    
 }
 .navbar img + li {
-    border-bottom: 1px solid #46A37C; width: 125px; left: 10px;
+    border-bottom: 1px solid #46A37C; 
+    width: 125px; 
+    left: 10px;
+    font-size: 13px;
     color:#46A37C;
     text-decoration-style:none;
 }
@@ -80,11 +105,11 @@ main {
     background-color: white ;
 }
 .section {
-    border-bottom: 4px solid #D9D9D9; 
     position: relative;
     height: 550px;
     width: 1000px;
     font-size: 16px;
+    border-bottom: 4px solid #D9D9D9; 
 }
 h1 {
     font-size: 50px;
@@ -94,7 +119,7 @@ h1 {
 .section h2{
     padding-top: 25px;
     font-size: 22px;
-    font-weight: 1000px;
+    font-weight: 500;
     color:#2F3058;
 }
 .imagen-01 {
@@ -118,7 +143,7 @@ h1 {
     margin-top: 20px;
     color: #2F3058;
     font-size: 30px;
-    font-weight: 1000px;
+    font-weight: 700;
 }
 .card {
     position: absolute;
@@ -144,6 +169,7 @@ h1 {
     position: absolute;
     top:25px;
     font-size: 18px;
+    font-weight: 500;
     color: #2F3058;
 }
 .notes1 p {
@@ -160,6 +186,7 @@ h1 {
     position: absolute;
     top:25px;
     font-size: 18px;
+    font-weight: 500;
     color: #2F3058;
 }
 .calendar1 p {
@@ -176,6 +203,7 @@ h1 {
     position: absolute;
     bottom:60px;
     font-size: 18px;
+    font-weight: 500;
     color: #2F3058;
 }
 .group1 p {
@@ -192,6 +220,7 @@ h1 {
     position: absolute;
     bottom:60px;
     font-size: 18px;
+    font-weight: 500;
     color: #2F3058;
 }
 .person1 p {
@@ -323,8 +352,8 @@ h1 {
     color: #2F3058;
 }
 .aboutus h3 {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 700;
     color: #2F3058;
 }
 .thoughts {
@@ -370,6 +399,10 @@ h1 {
     display: inline-block;
     font-size: 14px;
 }
+.gym h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
 .activities {
     position: absolute;
     top:90px;
@@ -378,7 +411,7 @@ h1 {
     border: 2px solid;
     padding-left: 0px;
     border-color: #49A37B;
-    border-radius: 15px;
+    border-radius: 10px;
 } 
 .activities ol {
     margin-left: 40px;
@@ -397,7 +430,7 @@ h1 {
     padding-left: 0px;
     border: 2px solid;
     border-color: #49A37B;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .black ol {
@@ -417,7 +450,7 @@ h1 {
     border: 2px solid;
     padding-left: 0px;
     border-color: #49A37B;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 .classic ol {
     margin-left: 40px;
@@ -436,7 +469,7 @@ h1 {
     padding-left: 0px;
     border: 2px solid;
     border-color: #49A37B;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .only-classes ol {
