@@ -36,3 +36,17 @@ Visual Code Studio have a main structure conformed by a header, body and footer 
 - Commit on git bash = "git commit -m "hi im a message"". Expressing the changes you have made since the last version you have saved of the file.
 7. Finally, send the new information to the cloud, using "git push origin master" on the board.
 >> It is important to check the situation using "git status" on git bash as many times as you need. For greater ease, its returns a red message indicating the unsaved files.
+
+# Week-03 #
+
+In this third week we started to use CSS. 
+Cascading Style Sheets (CSS) is a language of styles widely used in the programming's world because of their usefulness to style an HTML document. It not only describes how HTML elements should be displayed, but also allows you give them a gorgeous design.
+It is not necessary to download anything, you can work from Visual Studio Code, although it will be very helpfull for you to check the W3Schools website. On that page there is a manual that details how CSS works in a consistent and didactic way.
+Given that when a browser reads a style sheet, it will format the HTML document according to the information in the style sheet, start creating a new file and associate it to the head of the HTML on which we are going to work (external way)
+
+Following: <link rel="stylesheet" href="mystyle.css">
+
+The basic operation consists of creating selectors for each section or element in order to give them styles. There are different combinations of selectors but the "classes" are the most common. The interesting thing about a class is to be able to assign values to it and reuse it for different areas of the model in a massive way. It also exists "ID" which is used for those sections that are unique. 
+The next step is to declare the size of your box model (margin, border, padding and content) and assing color, location and shapes to the paragraphs or even images within de document according to your requirements. 
+
+A piece of advice: go checking the applied changes in the browser and help you using "inspect" function (f12)
