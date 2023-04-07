@@ -1,0 +1,127 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #000000BF;
+}
+.megarocket p {
+    width: 90%;
+}  
+body h1 {
+    margin: 35px;
+    margin-left: 0px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #2F3058;
+}
+.image-01 {
+    width: 306px; 
+    height: 275px;
+}
+body h2 {
+    align-items: auto;
+    margin: 25px;
+    margin-left: 0px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    color: #2F3058;
+}
+.meet-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    width: 95%;
+    height: 500px;
+}
+.meet-us article {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.card img {
+    width: 91px;
+    height: 91px;
+}
+.box-01, .box-02,.box-04 {
+    margin: 15px;
+    display: inline-block;
+}
+.box-03 {
+    margin: 10px;
+    display: inline-block;
+}
+.card h3 {  
+    font-size: 16px;
+    color:#2F3058;
+}
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.boxes-02{
+    display: flex;
+    flex-wrap: wrap;
+}
+.boxes-02 input {
+    width: 80%;
+    padding: 7px;
+    border-color: #373867;
+    border-radius: 4px;
+}
+.contact-us label {
+    padding-bottom: 7px;
+}
+.box-05, .box-06, .box-07 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    margin: 10px;
+}
+.boxes-03  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 95%;
+}
+.boxes-03 input {
+    width: 5%;
+}
+
+.contact-us .box-11 {
+    padding: 70px;
+    width: 85%;
+    border-color: #373867;
+    border-radius: 4px;
+}
+.contact-us .box-12 {
+    display: inline-block;
+    justify-items:space-between;
+    align-items: space-between;
+    width: 95%;
+    padding: 20px;
+    border-color: #373867;
+    border-radius: 5px;
+}
+.box-12 :nth-child(1) {
+    padding: 9px;
+    width: 40%;
+    background-color: #373867;
+    color: #FFFFFF;
+}
+.box-12 :nth-child(2) {
+    padding: 9px;
+    align-self: flex-end;
+    width: 20%;
+    color:#373867;
+}
