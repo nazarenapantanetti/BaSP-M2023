@@ -163,14 +163,13 @@ body h2 {
 }
 .boxes-05 {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: space-between;
   flex-wrap: wrap;
   width: 90%;
 }
 .paragraph-04 {
-  margin-left: 15px;
-  width: 50%;
+  width: 55%;
 }
 .paragraph-05 {
   margin-bottom: 15px;
@@ -181,13 +180,13 @@ body h2 {
   align-items: space-between;
 }
 .paragraph-06 p {
-  padding-right: 20px;
+  margin-right: 20px;
 }
 .boxes-06 {
   display: flex;
   flex-direction: column;
   flex-shrink: initial;
-  width: 85%;
+  width: 90%;
 }
 .image-02 {
   margin-right: 7px;
@@ -224,10 +223,96 @@ body h2 {
 }
 .gyms ol {
   padding-left: 25px;
+  padding-bottom: 15px;
+  color: #373867;
 }
 
 @media only screen and (min-width: 601px) {
+  main {
+    width: 834px;
+    font-size: 16px;
+  }
+  main p {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  main h2 {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 42px;
+  }
+
+  .megarocket {
+    flex: column;
+    align-content: center;
+  }
   .megarocket h1 {
     font-size: 48px;
+  }
+  .image-01 {
+    width: 596px;
+    height: 357px;
+  }
+  .megarocket h2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .megarocket p {
+    font-size: 16px;
+  }
+  .meet-us {
+    height: 900px;
+  }
+  .meet-us img {
+    width: 155px;
+    height: 147px;
+  }
+  .card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+  .contact-us {
+    height: 900px;
+  }
+  .contact-us label {
+    font-size: 16px;
+  }
+  .contact-us .box-12 {
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  .box-12 :nth-child(1) {
+    width: 25%;
+    padding: 12px;
+    margin-right: 20px;
+  }
+  .box-12 :nth-child(2) {
+    width: 20%;
+    padding: 12px;
+  }
+  .about-us {
+    height: 900px;
+  }
+  .about-us p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .about-us h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+  .image-02 {
+    width: 256px;
+    height: 121px;
+  }
+  .image-03 {
+    width: 254px;
+    height: 121px;
+  }
+  .gyms {
+    height: 850px;
   }
 }
