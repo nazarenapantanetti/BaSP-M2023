@@ -9,26 +9,37 @@ main {
   line-height: 16px;
   color: #000000bf;
 }
+
 .megarocket {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: wrap;
   width: 90%;
-  height: 800px;
+  height: 50rem;
   border-bottom: 4px solid #d9d9d9;
 }
+
 .megarocket p {
   width: 90%;
   text-indent: 15px;
 }
+
 body h1 {
   margin: 35px;
-  margin-left: 0px;
+  margin-left: 0;
+  margin-top: 15px;
   font-size: 32px;
   font-weight: 700;
   color: #2f3058;
 }
+
 .image-01 {
-  width: 306px;
-  height: 275px;
+  max-width: 30rem;
+  width: 19rem;
+  height: 17rem;
 }
+
 body h2 {
   align-items: auto;
   margin: 25px;
@@ -38,60 +49,71 @@ body h2 {
   line-height: 23px;
   color: #2f3058;
 }
+
 .meet-us {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-content: center;
   width: 90%;
-  height: 750px;
+  height: 45rem;
   border-bottom: 4px solid #d9d9d9;
 }
+
 .meet-us article {
   display: flex;
   justify-content: space-between;
   align-content: center;
 }
+
 .card img {
-  width: 91px;
-  height: 91px;
+  width: 6rem;
+  height: 6rem;
 }
+
 .box-01,
 .box-02,
 .box-04 {
   margin: 15px;
   display: inline-block;
 }
+
 .box-03 {
   margin: 10px;
   display: inline-block;
 }
+
 .card h3 {
   font-size: 16px;
   color: #2f3058;
 }
+
 .contact-us {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-content: space-between;
   width: 90%;
-  height: 800px;
+  height: 50rem;
   border-bottom: 4px solid #d9d9d9;
 }
+
 .boxes-02 {
   display: flex;
   flex-wrap: wrap;
 }
+
 .boxes-02 input {
   width: 80%;
   padding: 7px;
   border-color: #373867;
   border-radius: 4px;
 }
+
 .contact-us label {
   padding-bottom: 7px;
 }
+
 .box-05,
 .box-06,
 .box-07 {
@@ -117,6 +139,7 @@ body h2 {
   border-color: #373867;
   border-radius: 4px;
 }
+
 .box-12 {
   display: flex;
   justify-content: space-evenly;
@@ -132,82 +155,93 @@ body h2 {
   background-color: #373867;
   color: #ffffff;
 }
+
 .box-12 :nth-child(2) {
   padding: 9px;
   width: 35%;
   color: #373867;
 }
+
 .about-us {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: first baseline;
-  flex-wrap: wrap;
   width: 90%;
-  height: 750px;
+  height: 45rem;
+  margin-right: 5px;
   color: #6d6d6d;
   border-bottom: 4px solid #d9d9d9;
 }
+
 .paragraph-02 {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
+
 .paragraph-03 {
   margin-top: 10px;
   margin-bottom: 20px;
 }
+
 .about-us h3 {
   font-size: 15px;
   font-weight: 700;
   padding-bottom: 15px;
   color: #2f3058;
 }
+
 .boxes-05 {
   display: flex;
-  justify-content: space-between;
-  align-items: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
   width: 90%;
 }
+
 .paragraph-04 {
-  width: 55%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
+
 .paragraph-05 {
   margin-bottom: 15px;
 }
+
 .paragraph-06 {
   display: flex;
   justify-content: center;
   align-items: space-between;
 }
-.paragraph-06 p {
-  margin-right: 20px;
-}
+
 .boxes-06 {
   display: flex;
   flex-direction: column;
   flex-shrink: initial;
   width: 90%;
 }
+
 .image-02 {
   margin-right: 7px;
-  width: 111px;
-  height: 83px;
+  width: 7rem;
+  height: 5rem;
   border-radius: 8px;
 }
+
 .image-03 {
   display: inline-block;
-  width: 95px;
-  height: 89px;
+  width: 7rem;
+  height: 5rem;
   border-radius: 8px;
 }
+
 .gyms {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-content: center;
   width: 90%;
-  height: 700px;
+  height: 45rem;
 }
+
 .gyms article {
   border: solid 2px;
   padding: 15px 0 10px 15px;
@@ -215,12 +249,14 @@ body h2 {
   border-color: #49a37b;
   border-radius: 5px;
 }
+
 .gyms h3 {
   padding-bottom: 15px;
   font-size: 15px;
   font-weight: 700;
   color: #2f3058;
 }
+
 .gyms ol {
   padding-left: 25px;
   padding-bottom: 15px;
@@ -228,14 +264,11 @@ body h2 {
 }
 
 @media only screen and (min-width: 601px) {
-  main {
-    width: 834px;
-    font-size: 16px;
-  }
   main p {
     font-size: 16px;
     font-weight: 700;
   }
+
   main h2 {
     font-size: 36px;
     font-weight: 800;
@@ -246,73 +279,91 @@ body h2 {
     flex: column;
     align-content: center;
   }
+
   .megarocket h1 {
     font-size: 48px;
   }
+
   .image-01 {
-    width: 596px;
-    height: 357px;
+    width: 37rem;
+    height: 21rem;
   }
+
   .megarocket h2 {
     font-size: 24px;
     font-weight: 600;
   }
+
   .megarocket p {
     font-size: 16px;
   }
+
   .meet-us {
-    height: 900px;
+    height: 55rem;
   }
+
   .meet-us img {
-    width: 155px;
-    height: 147px;
+    width: 9rem;
+    height: 9rem;
   }
+
   .card h3 {
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
   }
+
   .contact-us {
-    height: 900px;
+    height: 55rem;
   }
+
   .contact-us label {
     font-size: 16px;
   }
+
   .contact-us .box-12 {
     justify-content: flex-end;
     margin-top: 20px;
   }
+
   .box-12 :nth-child(1) {
     width: 25%;
     padding: 12px;
     margin-right: 20px;
   }
+
   .box-12 :nth-child(2) {
     width: 20%;
     padding: 12px;
   }
+
   .about-us {
-    height: 900px;
+    height: 55rem;
   }
+
   .about-us p {
     font-weight: 600;
     font-size: 20px;
     line-height: 23px;
   }
+
   .about-us h3 {
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
   }
+
   .image-02 {
-    width: 256px;
-    height: 121px;
+    width: 16rem;
+    height: 7rem;
   }
+
   .image-03 {
-    width: 254px;
-    height: 121px;
+    width: 16rem;
+    height: 7rem;
   }
+
   .gyms {
-    height: 850px;
+    height: 53rem;
   }
 }
