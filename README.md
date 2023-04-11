@@ -68,3 +68,6 @@ background-color: lightblue;
 }
 }
 Since the browser's wide is 601px or bigger, the background will be blue.
+
+Visit the following GitHub pages link to view the result:
+https://nazarenapantanetti.github.io/BaSP-M2023/
