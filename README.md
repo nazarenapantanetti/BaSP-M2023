@@ -54,7 +54,17 @@ A piece of advice: go checking the applied changes in the browser and help you u
 
 # Week-04
 
-We went deeper in CSS learninig how to use Flex-Box. Flex-box is a tool that makes it easier to design flexible responsive layout structure using CSS.
+We went deeper in CSS learninig how to use Flex-Box. Flex-box is a tool that makes it easier to design flexible responsive layout structure.
 Their organize consider one parent element (or container) which host another elements (or child items). To give the flexible property to the container you must set "display: flex ", and automatically their direct children becomes flexible too.
 Once your box is flexible, you give it location to their items following two axis; exists: one main axis (horizontal by default) and a cross axis (vertical by default). The main axis always gonna take the same flex's direction, it can be row (by default) or column.
 There are many properties to assing to the flex-box like order, shrink, grow or even align-self, this last one allows you to give an exclusive direction or property to one specific child.
+It's useful to chose percentage or vw instead of pixel perfect to responsive layouts because it lets the page adapt according to different resolutions views.
+This week's project consisted of creating a mobile, tablet and desktop model following figma's landscape design. The recommendation was to start developing the mobile version and then manage to adapte the features to the different size of gadget making use of media queries.
+what is media queries? an option to achieve responsives layouts that works including a block of CSS properties only if a particular condition is true (called breakpoint). A breakpoint is usefull when parts of the design will behave differently under a certain condition or size version.
+An example:
+@media only screen and (min-width: 601px) {
+body {
+background-color: lightblue;
+}
+}
+Since the browser's wide is 601px or bigger, the background will be blue.

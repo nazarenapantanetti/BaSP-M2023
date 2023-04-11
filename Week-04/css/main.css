@@ -86,6 +86,7 @@ body h2 {
 .desktop-box-03 article :nth-child(1) {
   padding-bottom: 20px;
 }
+
 .desktop-box-04 article :nth-child(1) {
   padding-bottom: 20px;
 }
@@ -131,19 +132,25 @@ body h2 {
   align-content: center;
   margin: 10px;
 }
+
+.box-07 {
+  margin-right: 0;
+}
+
 .boxes-03 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 95%;
 }
+
 .boxes-03 input {
   width: 5%;
 }
 
 .contact-us .box-11 {
   padding: 70px;
-  width: 85%;
+  width: 90%;
   border-color: #373867;
   border-radius: 4px;
 }
@@ -151,7 +158,7 @@ body h2 {
 .box-12 {
   display: flex;
   justify-content: space-evenly;
-  width: 85%;
+  width: 90%;
   margin-top: 15px;
   border-color: #373867;
   border-radius: 5px;
@@ -250,18 +257,13 @@ body h2 {
   height: 45rem;
 }
 
-.gyms article {
+.desktop-box-06 article {
+  margin: 20px 0;
   padding: 15px 0 10px 15px;
   width: 90%;
   border: solid 2px;
   border-color: #49a37b;
   border-radius: 5px;
-}
-.desktop-box-05 article:nth-child(1) {
-  margin-bottom: 25px;
-}
-.desktop-box-06 article:nth-child(1) {
-  margin-bottom: 25px;
 }
 
 .gyms h3 {
@@ -405,6 +407,7 @@ body h2 {
   .megarocket {
     height: 40rem;
   }
+
   .megarocket h1 {
     font-size: 55px;
   }
@@ -456,25 +459,18 @@ body h2 {
     display: flex;
   }
 
-  .boxes-02 {
+  .desktop-box-05 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    flex-wrap: wrap;
   }
 
-  .boxes-02 input {
-    width: 70%;
+  .desktop-box-05 :nth-child(1) {
+    display: inline-block;
   }
-
-  .contact-us + .boxes-02 input {
-    width: 50%;
+  .box-07 {
+    width: 47%;
   }
-
-  .desktop-box-04 {
-    display: inline-flex;
-  }
-
   .about-us p {
     font-weight: 600;
     font-size: 23px;
@@ -491,37 +487,22 @@ body h2 {
     font-size: 19px;
   }
 
+  .desktop-box-06 article {
+    width: 45%;
+  }
+
   .gyms {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-content: first baseline;
     flex-wrap: wrap;
-  }
-  .gyms h3 {
-    margin-right: ;
-  }
-
-  .desktop-box-05 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: space-evenly;
-    width: 50%;
   }
 
   .desktop-box-06 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    align-content: space-evenly;
-    width: 50%;
     flex-wrap: wrap;
+    width: 100%;
   }
-  .desktop-box-06 :nth-child(1){
-    padding-bottom: 0;
-    
-  }
-  .desktop-box-06 :nth-child(2) {
-    margin-top: 15px;
 }
