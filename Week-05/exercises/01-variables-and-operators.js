@@ -4,38 +4,38 @@ console.log("--EXCERCISE 1: VARIABLES AND OPERATORS");
 // de ambos números en una 3er variable.
 
 console.log("-Excercise 1.a:");
-var numberOne, numberTwo, addition;
+var number1, number2, addition1;
 
-numberOne = 2;
-numberTwo = 10;
-addition = numberOne + numberTwo;
-console.log(addition);
+number1 = 2;
+number2 = 10;
+addition1 = number1 + number2;
+console.log(addition1);
 
 //b. Crear dos variables de tipo String y concatenarlas guardando el resultado en una 3er variable.
 
 console.log("-Excercise 1.b:");
-var wordOne, wordTwo, sentence;
+var sweet1, sweet2, sentence1;
 
-wordOne = "candies";
-wordTwo = "chocolate";
-sentence = "Pablo prefer eating " + wordOne + " than " + wordTwo;
+sweet1 = "candies";
+sweet2 = "chocolate";
+sentence1 = "Pablo prefer eating " + sweet1 + " than " + sweet2;
 
-console.log(sentence);
+console.log(sentence1);
 
 // c. Crear dos variables de tipo String y sumar el largo de cada variable (cantidad de letras del string)
 // guardando el resultado de la suma en una 3er variable (utilizar length).
 
 console.log("-Excercise 1.c:");
-var fruitOne, fruitTwo, letters;
+var fruit1, fruit2, letters;
 
-fruitOne = "banana";
-fruitTwo = "apple";
-letters = fruitOne.length + fruitTwo.length;
+fruit1 = "banana";
+fruit2 = "apple";
+letters = fruit1.length + fruit2.length;
 
 console.log(
   "banana has a lenght of " +
-    fruitOne.length +
+    fruit1.length +
     " letters, and apple " +
-    fruitTwo.length
+    fruit2.length
 );
 console.log("the lenght of both words is " + letters);
