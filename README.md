@@ -70,4 +70,34 @@ background-color: lightblue;
 Since the browser's wide is 601px or bigger, the background will be blue.
 
 Visit the following GitHub pages link to view the result:
-https://nazarenapantanetti.github.io/BaSP-M2023/
+https://github.com/nazarenapantanetti/BaSP-M2023/tree/master/Week-04
+
+# Week 05
+
+JavaScript arrived to us!
+Once you have HTML (structure model) and CSS (design) its time to add JavaScript. It is the world's most popular programming language, which scripts web pages, giving them the attribute of being interactive in a light way.
+
+In order to learn how to use this recognized language, the project of this week was doing a variety of excercises. The excercises included everything from definition of variables to the creation of loops, arrays and development of functions briefly explain below.
+
+A few things to have in mind:
+
+- Start inserting JavaScript on HTML's file making use of the tag <script> at Visual Code Studio.
+- You can use // or /\* to comment. Comments arent taken into account when the code runs.
+- A keyword is a reserved word.
+
+VARIABLES AND OPERATORS
+Variables are containers for storing data (var)
+Operators: there are many types, such Assignment Operator (=) which assigns a value to a variable or arithmetic ones ( + - \* / ) to compute values.
+STRINGS
+Store text, include zero or more characters written inside quotes ('')
+ARRAYS
+Its characterized by being able to store more than one value. Unlike variables, its written in square brackets ([])
+IF ELSE
+Is one of the conditional statments, used to perform different actions according to different scenarios. If corresponds to the true condition, and else to an alternative path.
+FOR
+It a loop, what means it can execute a block of code repeatedly, each time with a different value.
+FUNCTIONS
+Contain code inside and parameters that contemplates when executing. It is defined with the function keyword, and is executed when is called by their name.
+
+Visit the following GitHub pages link to view the result:
+https://github.com/nazarenapantanetti/BaSP-M2023/tree/master/Week-05

@@ -58,13 +58,19 @@ var value2 = 10;
 var total;
 
 function newAdd(value1, value2) {
-  if (validateInteger(value1, value2) === true) {
-    return value1 + value2;
+  if (typeof value1 === 'number' && typeof value2 === 'number') {
+    if (validateInteger(value1) && validateInteger(value2)) {
+      return value1 + value2;
+    } else {
+      alert('wrong');
+      return Math.round(value1) + Math.round(value2);
+    }
   } else {
-    alert('wrong');
-    return Math.round(value1, value2 !== true);
+    alert('one value is wrong');
+    return NaN;
   }
 }
+
 total = newAdd(value1, value2);
 console.log(total);
 
@@ -75,11 +81,16 @@ console.log('-Excercise 6.e:');
 var value = 3.5;
 
 function validateOrRound(value) {
-  if (value % 1 === 0) {
-    return true;
+  if (typeof value1 === 'number') {
+    if (value % 1 === 0) {
+      return true;
+    } else {
+      alert('number round');
+      return Math.round(value);
+    }
   } else {
-    alert('number round');
-    return Math.round(value);
+    alert('one value is wrong');
+    return NaN;
   }
 }
 console.log(validateOrRound(value));
