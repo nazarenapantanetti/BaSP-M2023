@@ -20,15 +20,11 @@ header {
   width: 2px;
   height: 3rem;
 }
-@media only screen and (min-width: 601px) {
+
+@media only screen and (min-width: 600px) {
   header {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-  }
-
-  .logo-02 {
-    margin-top: 1rem;
-    margin-right: 1rem;
   }
 }

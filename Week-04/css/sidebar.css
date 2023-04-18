@@ -1,121 +1,110 @@
+aside {
+  position: fixed;
+  display: none;
+  width: 250px;
+  height: 100vh;
+  top: 0;
+  background-color: #373867f2;
+}
+
 .navbar {
+  display: flex;
+  margin-left: 25px;
+  flex-direction: column;
+  align-content: center;
+}
+
+.navbar-box-01 {
+  display: flex;
+}
+
+.logo-03 {
+  margin-left: 40px;
+  margin-top: 20px;
+  width: 7rem;
+  height: 4rem;
+}
+
+.logo-04 {
+  width: 1rem;
+  height: 0.5rem;
+}
+
+.logo-05,
+.logo-06,
+.logo-07 {
+  width: 1rem;
+  height: 1rem;
+}
+
+.navbar ul li {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 75%;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #c4c4c4;
+  border-bottom: solid 1px #c4c4c4;
+}
+
+.navbar ul li:nth-child(4) {
+  display: inline;
+  border: 0px;
+  color: #46a37c;
+}
+
+.navbar ul li:nth-child(5) {
+  margin-top: 0px;
+  display: inline;
+  border: 0px;
+}
+
+.navbar address,
+.navbar a {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  color: #c4c4c4;
+}
+
+.navbar li:nth-child(6) {
+  padding-bottom: 0;
+  width: 50%;
+  font-size: 14px;
+  font-weight: 700;
+  color: #46a37c;
+  border-bottom: 1px solid #46a37c;
+}
+
+.navbar-box-03 {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 10px 0;
+  width: 75%;
+  align-items: center;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.navbar-box-04,
+.navbar-box-05 {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 10px 0;
+  width: 75%;
+  align-items: center;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+aside {
   display: none;
 }
 
 @media only screen and (min-width: 1024px) {
   aside {
-    position: fixed;
     display: flex;
-    width: 250px;
-    height: 100%;
-    top: 0;
-    font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell;
-    background-color: #373867f2;
-  }
-
-  .navbar {
-    display: flex;
-    margin-left: 25px;
-    flex-direction: column;
-    align-content: center;
-  }
-
-  .logo-03 {
-    display: flex;
-    margin-left: 40px;
-    margin-top: 20px;
-    width: 7rem;
-    height: 4rem;
-  }
-
-  .logo-04 {
-    width: 1rem;
-    height: 0.5rem;
-  }
-
-  .logo-05,
-  .logo-06,
-  .logo-07 {
-    width: 1rem;
-    height: 1rem;
-  }
-
-  .navbar ul li {
-    display: flex;
-    padding: 10px;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    width: 75%;
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 30px;
-    color: #c4c4c4;
-    border-bottom: solid 1px #c4c4c4;
-  }
-
-  .navbar-box-02 {
-    display: flex;
-    justify-items: space-between;
-    align-items: center;
-  }
-
-  .navbar address,
-  .navbar a {
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 12px;
-    color: #c4c4c4;
-  }
-
-  .navbar-box-02 li:nth-child(1) {
-    border: 0px;
-    color: #46a37c;
-  }
-
-  .navbar-box-02 li:nth-child(2) {
-    border-bottom: none;
-  }
-
-  .navbar li:nth-child(5) {
-    padding-bottom: 0;
-    width: 50%;
-    font-size: 14px;
-    font-weight: 700;
-    color: #46a37c;
-    border-bottom: 1px solid #46a37c;
-  }
-
-  .navbar-box-03 {
-    display: flex;
-    justify-items: first baseline;
-    align-items: center;
-    padding: 10px 10px 10px 0;
-    width: 75%;
-    justify-items: space-between;
-    align-items: center;
-    border-bottom: 1px solid #c4c4c4;
-  }
-
-  .navbar-box-04 {
-    display: flex;
-    justify-items: first baseline;
-    align-items: center;
-    padding: 10px 10px 10px 0;
-    width: 75%;
-    justify-items: space-between;
-    align-items: center;
-    border-bottom: 1px solid #c4c4c4;
-  }
-
-  .navbar-box-05 {
-    display: flex;
-    justify-items: first baseline;
-    align-items: center;
-    padding: 10px 10px 10px 0;
-    width: 75%;
-    justify-items: space-between;
-    align-items: center;
-    border-bottom: 1px solid #c4c4c4;
   }
 }
