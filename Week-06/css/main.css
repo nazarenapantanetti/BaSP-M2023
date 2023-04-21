@@ -1,0 +1,483 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #000000bf;
+}
+
+.megarocket {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  height: 50rem;
+  border-bottom: 4px solid #d9d9d9;
+}
+
+.megarocket p {
+  width: 90%;
+  margin-top: 15px;
+  text-indent: 15px;
+}
+
+body h1 {
+  margin: 35px;
+  margin-left: 0;
+  margin-top: 15px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #2f3058;
+}
+
+.image-01 {
+  max-width: 30rem;
+  width: 19rem;
+  height: 17rem;
+}
+
+body h2 {
+  align-items: auto;
+  margin: 25px;
+  margin-left: 0px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  color: #2f3058;
+}
+
+.meet-us {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 90%;
+  height: 35rem;
+  border-bottom: 4px solid #d9d9d9;
+}
+
+.meet-us article {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.meet-us img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.box-01,
+.box-02,
+.box-04 {
+  margin: 15px;
+  display: inline-block;
+}
+
+.box-03 {
+  margin: 10px;
+  display: inline-block;
+}
+
+.desktop-box-03 article :nth-child(1),
+.desktop-box-04 article :nth-child(1) {
+  padding-bottom: 20px;
+}
+
+.meet-us article h3,
+.gyms article h3 {
+  font-size: 16px;
+  color: #2f3058;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 90%;
+  height: 50rem;
+  border-bottom: 4px solid #d9d9d9;
+}
+
+.boxes-02 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.boxes-02 input {
+  width: 80%;
+  padding: 7px;
+  border-color: #373867;
+  border-radius: 4px;
+}
+
+.contact-us label {
+  padding-bottom: 7px;
+}
+
+.box-05,
+.box-06,
+.box-07 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  margin: 10px;
+}
+
+.box-07 {
+  margin-right: 0;
+}
+
+.boxes-03 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.boxes-03 input {
+  width: 5%;
+}
+
+.contact-us .box-11 {
+  padding: 45px;
+  width: 90%;
+  border-color: #373867;
+  border-radius: 4px;
+}
+
+.box-12 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  margin-top: 15px;
+  border-color: #373867;
+  border-radius: 5px;
+}
+
+.box-12 :nth-child(1) {
+  padding: 9px;
+  width: 40%;
+  background-color: #373867;
+  color: #ffffff;
+}
+
+.box-12 :nth-child(2) {
+  padding: 9px;
+  width: 35%;
+  color: #373867;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 90%;
+  height: 45rem;
+  margin-right: 5px;
+  color: #6d6d6d;
+  border-bottom: 4px solid #d9d9d9;
+}
+
+.paragraph-02 {
+  margin-bottom: 15px;
+}
+
+.paragraph-03 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.about-us h3 {
+  font-size: 15px;
+  font-weight: 700;
+  padding-bottom: 15px;
+  color: #2f3058;
+}
+
+.boxes-05 {
+  display: flex;
+  flex-direction: column;
+}
+
+.paragraph-04 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.paragraph-05 {
+  margin-bottom: 15px;
+}
+
+.paragraph-06 {
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+}
+
+.boxes-06 {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: initial;
+}
+
+.image-02 {
+  margin-right: 7px;
+  width: 7rem;
+  height: 5rem;
+  border-radius: 8px;
+}
+
+.image-03 {
+  display: inline-block;
+  width: 7rem;
+  height: 5rem;
+  border-radius: 8px;
+}
+
+.gyms {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 90%;
+  height: 45rem;
+}
+
+.desktop-box-06 article {
+  margin: 20px 0;
+  padding: 15px 0 10px 15px;
+  width: 90%;
+  border: solid 2px;
+  border-color: #49a37b;
+  border-radius: 5px;
+}
+
+.gyms h3 {
+  padding-bottom: 15px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #2f3058;
+}
+
+.gyms ol {
+  padding-left: 25px;
+  padding-bottom: 15px;
+  color: #373867;
+}
+
+@media only screen and (min-width: 600px) {
+  main p {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  main h2 {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 42px;
+  }
+
+  .megarocket {
+    flex: column;
+    align-content: flex-start;
+    margin-top: 35px;
+  }
+
+  .megarocket h1 {
+    font-size: 48px;
+  }
+
+  .image-01 {
+    width: 37rem;
+    height: 21rem;
+  }
+
+  .megarocket h2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .meet-us,
+  .contact-us,
+  .about-us,
+  .gyms {
+    height: 55rem;
+  }
+
+  .meet-us img {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .meet-us article h3,
+  .gyms article h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+
+  .megarocket p,
+  .gyms article li,
+  .contact-us label {
+    font-size: 16px;
+  }
+
+  .contact-us .box-12 {
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+
+  .box-12 :nth-child(1) {
+    width: 25%;
+    padding: 12px;
+    margin-right: 20px;
+  }
+
+  .box-12 :nth-child(2) {
+    width: 20%;
+    padding: 12px;
+  }
+
+  .about-us p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .about-us h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+
+  .image-02,
+  .image-03 {
+    width: 16rem;
+    height: 7rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    display: flex;
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .desktop-box-01 {
+    padding-left: 250px;
+  }
+
+  .megarocket {
+    height: 40rem;
+  }
+
+  .megarocket h1 {
+    font-size: 55px;
+  }
+
+  .desktop-box-02 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .paragraph-01 {
+    font-size: 18px;
+  }
+
+  main p {
+    font-size: 25px;
+  }
+
+  .meet-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .desktop-box-03 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  .desktop-box-04 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-end;
+  }
+
+  .meet-us article p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #979797;
+  }
+
+  .meet-us article {
+    width: 50%;
+  }
+
+  .contact-us {
+    display: flex;
+  }
+
+  .desktop-box-05 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .desktop-box-05 :nth-child(1) {
+    display: inline-block;
+  }
+  .box-07 {
+    width: 47%;
+  }
+  .about-us p {
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 29px;
+  }
+
+  .about-us h3 {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+
+  .gyms article li {
+    font-size: 19px;
+  }
+
+  .desktop-box-06 article {
+    width: 45%;
+  }
+
+  .gyms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .desktop-box-06 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
