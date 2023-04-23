@@ -5,11 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Document login</title>
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/login.css" />
+    <script defer src="../js/login.js"></script>
   </head>
   <header>
     <img src="../../Assets/Images/logo-01.png" alt="logo" class="logo-01" />
@@ -18,21 +19,22 @@
     <main>
       <h1>Sign in</h1>
       <form class="form-login">
+        <a href="./index.html">Volver</a>
         <h2>Login</h2>
         <div class="email-input">
           <img src="../../Assets/Images/icon-01.png" alt="icon" />
-          <input type="email" />
+          <input type="email" id="email-input" />
         </div>
         <div class="password-input">
           <img src="../../Assets/Images/icon-02.png" alt="icon" />
-          <input type="password" />
+          <input type="password" id="password-input" />
         </div>
         <div class="help">
           <p>Remember me</p>
           <p>Forgot password?</p>
         </div>
         <div class="buttons">
-          <input type="button" value="Sign in" />
+          <input type="button" value="Login" id="login-button" />
           <input type="button" value="Sign up" />
         </div>
       </form>

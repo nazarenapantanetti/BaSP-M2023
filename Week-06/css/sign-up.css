@@ -1,0 +1,45 @@
+main {
+  background-image: url('../../Assets/Images/gym.png');
+  background-repeat: no-repeat;
+  position: fixed;
+  height: 100%;
+}
+
+main h1,
+main h2 {
+  color: #ffffff;
+  font-size: 34px;
+}
+
+.form-sign-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 75%;
+  height: 75%;
+  background-color: #8e969c;
+  opacity: 90%;
+}
+
+.container-left {
+  align-self: left;
+}
+
+.container-right {
+  align-self: right;
+}
+
+.container-left div,
+.container-right div {
+  display: flex;
+  height: 30px;
+  margin: 20px;
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    top: 80px;
+  }
+}

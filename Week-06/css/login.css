@@ -38,6 +38,7 @@ main h2 {
   flex-direction: row;
   justify-items: space-evenly;
 }
+
 .help,
 .buttons {
   flex-direction: column;
@@ -50,6 +51,19 @@ main h2 {
   background-color: #cc9d42;
   color: #ffffff;
 }
+
+form a {
+  display: flex;
+  align-self: self-end;
+  font-size: 20px;
+}
+
+.xError {
+  border: #cc9d42;
+  color: red;
+  font-size: 15px;
+}
+
 @media only screen and (min-width: 1024px) {
   main {
     top: 80px;
