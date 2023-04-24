@@ -7,6 +7,7 @@ function validationEmail() {
     console.log('ok');
   } else {
     inputEmail.classList.add('xError');
+    console.log('bad');
   }
 }
 inputEmail.addEventListener('blur', validationEmail);
@@ -20,27 +21,52 @@ inputEmail.addEventListener('focus', removeEmailAlert);
 var inputPassword = document.getElementById('password-input');
 
 function validationPassword() {
-  if (inputPassword.value.lenght >= 5) {
-    return inputPassword.value.includes('a' && 1);
-  } else {
+  var password = inputPassword.value;
+  var hasSmallLetter = false;
+  var hasNumber = false;
+
+  for (var i = 0; i < password.length; i++) {
+    var char = password.charAt(i);
+    if (char >= '0' && char <= '9') {
+      hasNumber = true;
+    } else if (char === char.toLowerCase()) {
+      hasSmallLetter = true;
+    }
+  }
+  if (!hasSmallLetter || !hasNumber) {
     inputPassword.classList.add('xError');
   }
 }
-inputPassword.addEventListener = ('blur', validationPassword);
+inputPassword.addEventListener('blur', validationPassword);
 
 function removePasswordAlert() {
   inputPassword.classList.remove('xError');
 }
 inputPassword.addEventListener('focus', removePasswordAlert);
-/*
+
 //BUTTON
-var buttonLogin = getElementById('login-button');
+var buttonLogin = document.getElementById('login-button');
+var msgErrorEmail = document.getElementById('msgErrorEmail');
+var msgErrorPassword = document.getElementById('msgErrorPassword');
 
 function validationLogin() {
-  if (validationEmail === true && validationPassword === true) {
-    return alert('welcome');
-  } else {
+  if (
+    inputEmail.classList.contains('xError') ||
+    inputPassword.classList.contains('xError')
+  )
     alert('email or password is wrong');
+  if (inputEmail.classList.contains('xError')) {
+    msgErrorEmail.classList.remove('ok');
+    inputEmail.onfocus = function () {
+      msgErrorEmail.classList.add('ok');
+    };
+  } else if (inputPassword.classList.contains('xError')) {
+    msgErrorPassword.classList.remove('ok');
+    inputPassword.onfocus = function () {
+      msgErrorPassword.classList.add('ok');
+    };
+  } else {
+    alert('welcome');
   }
 }
-buttonLogin.addEventListener('onclick', validationLogin);*/
+buttonLogin.addEventListener('click', validationLogin);

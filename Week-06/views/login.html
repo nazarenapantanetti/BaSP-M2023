@@ -24,10 +24,12 @@
         <div class="email-input">
           <img src="../../Assets/Images/icon-01.png" alt="icon" />
           <input type="email" id="email-input" />
+          <span id="msgErrorEmail" class="ok">invalid email</span>
         </div>
         <div class="password-input">
           <img src="../../Assets/Images/icon-02.png" alt="icon" />
           <input type="password" id="password-input" />
+          <span id="msgErrorPassword" class="ok">invalid password</span>
         </div>
         <div class="help">
           <p>Remember me</p>
@@ -35,7 +37,9 @@
         </div>
         <div class="buttons">
           <input type="button" value="Login" id="login-button" />
-          <input type="button" value="Sign up" />
+          <a href="../views/sign-up.html"
+            ><input type="button" value="Sign up" />
+          </a>
         </div>
       </form>
     </main>
