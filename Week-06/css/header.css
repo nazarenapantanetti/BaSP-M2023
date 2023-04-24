@@ -17,8 +17,12 @@ header {
 
 .logo-02 {
   align-self: flex-start;
-  width: 2px;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.AuxiliarLogin {
+  color: #23af91;
 }
 
 @media only screen and (min-width: 600px) {
@@ -26,5 +30,10 @@ header {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .auxiliarLogin {
+    display: none;
   }
 }

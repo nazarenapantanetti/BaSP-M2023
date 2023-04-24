@@ -58,8 +58,11 @@ form a {
   font-size: 20px;
 }
 
+a {
+  color: #373867;
+}
+
 .xError {
-  border: #cc9d42;
   color: red;
   font-size: 15px;
 }

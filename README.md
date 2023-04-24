@@ -70,7 +70,7 @@ background-color: lightblue;
 Since the browser's wide is 601px or bigger, the background will be blue.
 
 Visit the following GitHub pages link to view the result:
-https://github.com/nazarenapantanetti/BaSP-M2023/tree/master/Week-04
+https://nazarenapantanetti.github.io/BaSP-M2023/Week-04/
 
 # Week 05
 
@@ -100,4 +100,20 @@ FUNCTIONS
 Contain code inside and parameters that contemplates when executing. It is defined with the function keyword, and is executed when is called by their name.
 
 Visit the following GitHub pages link to view the result:
-https://github.com/nazarenapantanetti/BaSP-M2023/tree/master/Week-05
+https://nazarenapantanetti.github.io/BaSP-M2023/Week-05/
+
+#Week-06#
+
+Let's learn about the DOM (Document Object Model). When a web page is loaded, the browser creates a DOM of the page, as a tree of objects, where the branches are de different elements/nodes that make up the page. DOM's job is facilitate a structured representation of the document (tree) and define how programs can access, ir order to modify, both their srtucture, style and content (branches/nodes). It essentially connect web pages to programming languages.
+
+This week's work consist of creating a form associated with the landing page in which he have been working on. Following the design of Figma, it has to contain a Login part and a Sign Up one too. Another consideration is that the page must allow navigation from one site to another.
+In order to achieve the aim its necessary to complete the following points:
+
+- Create separate HTML files for Login and Sign Up.
+- Give them CSS style according to the previous landing page.
+- Apply JavaScript logic for the operation of the form.
+
+Plus: Requirement PDF: its a simple but important document in which the requirements/funtionalities that a project must achieve are refelected. This document is used by all the scrum team in order to check if a product can be considered satisfactory done.
+
+Visit the following GitHub pages link to view the result:
+https://nazarenapantanetti.github.io/BaSP-M2023/Week-06/
