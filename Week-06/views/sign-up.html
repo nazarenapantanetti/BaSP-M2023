@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/sign-up.css" />
-    <script src="../js/sign-up.js"></script>
+    <script defer src="../js/sign-up.js"></script>
   </head>
   <header>
     <img src="../../Assets/Images/logo-01.png" alt="logo" class="logo-01" />
@@ -17,55 +17,72 @@
   <body>
     <main>
       <h1>Sign Up</h1>
-
       <form class="form-sign-up">
+        <a href="../views/index.html"> <p>Volver</p></a>
         <h2>Register</h2>
-        <div class="container-left">
-          <div class="name-input">
+        <div class="container-inputs">
+          <div>
             <img src="../../Assets/Images/icon-04.png" alt="icon" />
-            <input type="text" placeholder="Name" />
+            <input id="name-input" type="text" placeholder="Name" />
+            <span id="name-span" class="ok">Invalid name</span>
           </div>
-          <div class="lastname-input">
+          <div>
             <img src="../../Assets/Images/icon-04.png" alt="icon" />
-            <input type="text" placeholder="Last name" />
+            <input id="lastname-input" type="text" placeholder="Last name" />
+            <span id="lastname-span" class="ok">Invalid lastname</span>
           </div>
-          <div class="dni-input">
+          <div>
             <img src="../../Assets/Images/icon-04.png" alt="icon" />
-            <input type="text" placeholder="DNI" />
+            <input id="dni-input" type="text" placeholder="DNI" />
+            <span id="dni-span" class="ok">Invalid dni</span>
           </div>
-          <div class="birth-input">
+          <div>
             <img src="../../Assets/Images/icon-04.png" alt="icon" />
-            <input type="date" placeholder="Birthday" />
+            <input id="location-input" type="text" placeholder="Location" />
+            <span id="location-span" class="ok">Invalid location</span>
           </div>
-          <div class="location-input">
+          <div>
             <img src="../../Assets/Images/icon-04.png" alt="icon" />
-            <input type="text" placeholder="Location" />
+            <input id="adress-input" type="text" placeholder="Adress" />
+            <span id="adress-span" class="ok">Invalid adress</span>
           </div>
-        </div>
-        <div class="container-right">
-          <div class="adress-input">
+          <div>
             <img src="../../Assets/Images/icon-04.png" alt="icon" />
-            <input type="text" placeholder="Adress" />
+            <input id="telphone-input" type="text" placeholder="telphone" />
+            <span id="telphone-span" class="ok">Invalid telphone</span>
           </div>
-          <div class="celphone-input">
+          <div>
             <img src="../../Assets/Images/icon-04.png" alt="icon" />
-            <input type="text" placeholder="Celphone" />
+            <input
+              id="postal-code-input"
+              type="text"
+              placeholder="Postal code"
+            />
+            <span id="postal-code-span" class="ok">Invalid postal code</span>
           </div>
-          <div class="postal-code-input">
+          <div>
             <img src="../../Assets/Images/icon-04.png" alt="icon" />
-            <input type="text" placeholder="Postal code" />
+            <input id="email-input" type="text" placeholder="Email" />
+            <span id="email-span" class="ok">Invalid email</span>
           </div>
-          <div class="email-input">
+          <div>
             <img src="../../Assets/Images/icon-04.png" alt="icon" />
-            <input type="text" placeholder="Email" />
+            <input id="password-input" type="password" placeholder="Password" />
+            <span id="password-span" class="ok">Invalid password</span>
           </div>
-          <div class="password-input">
+          <div>
             <img src="../../Assets/Images/icon-04.png" alt="icon" />
-            <input type="password" placeholder="Password" />
+            <input
+              id="repeat-password-input"
+              type="password"
+              placeholder="Repeat password"
+            />
+            <span id="repeat-password-span" class="ok">unequal password</span>
           </div>
-          <div class="repeat-password-input">
+          <div>
             <img src="../../Assets/Images/icon-04.png" alt="icon" />
-            <input type="password" placeholder="Repeat password" />
+            <input id="birth-input" type="date" placeholder="Birthday" />
+            <span id="birth-span" class="ok">Invalid format</span>
           </div>
         </div>
       </form>

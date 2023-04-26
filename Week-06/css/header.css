@@ -1,7 +1,6 @@
 header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-content: center;
   top: 0px;
   width: 100%;
@@ -9,17 +8,22 @@ header {
   background-color: #373867;
 }
 
-header div {
+.div1 {
   display: flex;
-  justify-content: flex-start;
+  justify-self: flex-start;
   margin: 10px;
+}
+
+.div2 {
+  display: inline-block;
+  justify-self: center;
+  padding: 10px;
 }
 
 header p {
   color: #28b98e;
   font-weight: 500;
   font-size: 20px;
-  margin: 15px;
 }
 
 .logo-01 {

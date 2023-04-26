@@ -1,41 +1,61 @@
 main {
   background-image: url('../../Assets/Images/gym.png');
   background-repeat: no-repeat;
-  position: fixed;
   height: 100%;
 }
 
 main h1,
-main h2 {
+.form-sign-up h2 {
   color: #ffffff;
   font-size: 34px;
+  text-align: center;
 }
 
 .form-sign-up {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
   width: 75%;
   height: 75%;
   background-color: #8e969c;
   opacity: 90%;
 }
 
-.container-left {
-  align-self: left;
+form p {
+  color: #373867;
+  font-size: 20px;
+  text-align: end;
 }
 
-.container-right {
-  align-self: right;
-}
-
-.container-left div,
-.container-right div {
+.container-inputs {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-height: 74%;
+}
+
+.container-inputs div {
+  display: flex;
+  flex-direction: column;
   height: 30px;
   margin: 20px;
+}
+
+.container-inputs img {
+  width: 15px;
+  height: 15px;
+}
+
+.ok {
+  display: none;
+}
+
+.noOk {
+  display: block;
+  color: #c90d0d;
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    position: fixed;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
