@@ -11,7 +11,6 @@ nameInput.onblur = function () {
     typeof nameValue === "string" &&
     validationNum(nameValue) === false
   ) {
-    console.log("hola");
   } else {
     nameSpan.classList.remove("ok");
     nameSpan.classList.add("noOk");
@@ -35,7 +34,6 @@ lastnameInput.onblur = function () {
     typeof lastnameValue === "string" &&
     validationNum(lastnameValue) === false
   ) {
-    console.log("hola");
   } else {
     lastnameSpan.classList.remove("ok");
     lastnameSpan.classList.add("noOk");
@@ -53,7 +51,6 @@ var dniSpan = document.getElementById("dni-span");
 
 dniInput.onblur = function () {
   if (validationNum(dniInput.value) === true && dniInput.value.length > 7) {
-    console.log("anda bien");
   } else {
     dniSpan.classList.remove("ok");
     dniSpan.classList.add("noOk");
@@ -82,7 +79,6 @@ var locationSpan = document.getElementById("location-span");
 locationInput.onblur = function () {
   var locationValue = locationInput.value;
   if (locationValue.length > 3) {
-    console.log("hola");
   } else {
     locationSpan.classList.remove("ok");
     locationSpan.classList.add("noOk");
@@ -124,7 +120,6 @@ var telphoneSpan = document.getElementById("telphone-span");
 
 telphoneInput.onblur = function () {
   if (telphoneInput.value.length !== 10 || telphoneInput.value !== number) {
-    console.log("okkkk");
     telphoneSpan.classList.remove("ok");
     telphoneSpan.classList.add("noOk");
   }
@@ -145,7 +140,6 @@ postalCodeInput.onblur = function () {
     postalCodeValue.length >= 4 &&
     postalCodeValue.length <= 5
   ) {
-    console.log("VAMO");
   } else {
     postalCodeSpan.classList.remove("ok");
     postalCodeSpan.classList.add("noOk");
@@ -218,4 +212,67 @@ repeatPasswordInput.onblur = function () {
 passwordInput.onfocus = function () {
   repeatPasswordSpan.classList.remove("noOk");
   repeatPasswordSpan.classList.add("ok");
+};
+
+//BIRTH
+
+var birthInput = document.getElementById("birth-input");
+var birthSpan = document.getElementById("birth-span");
+
+birthInput.onblur = function ValidateBirth() {
+  var year = birthInput.value.substring(0, 4);
+  console.log(year);
+  if (year.length !== 4 || year < 1900 || year > 2013) {
+    birthSpan.classList.remove("ok");
+    birthSpan.classList.add("noOk");
+  }
+};
+birthInput.onfocus = function () {
+  birthSpan.classList.remove("noOk");
+  birthSpan.classList.add("ok");
+};
+
+//BUTTON
+
+var buttonInput = document.getElementById("sign-up-button");
+var buttonSpan = document.getElementById("sign-up-span");
+
+function validationEmpty() {
+  var input = document.getElementsByTagName("input");
+  for (i = 0; i < input.length - 1; i++) {
+    if (input[i].value === "") {
+      return false;
+    }
+  }
+}
+
+buttonInput.onclick = function (event) {
+  event.preventDefault();
+  var span = document.getElementsByTagName("span");
+  var errorList = "";
+
+  for (i = 0; i < span.length; i++) {
+    if (span[i].classList.contains("noOk")) {
+      errorList += span[i].textContent;
+    }
+  }
+  if (validationEmpty !== true) {
+    alert("Some field is empty");
+  } else if (errorList.length >= 1) {
+    alert(errorList + "\n");
+  } else {
+    alert(
+      nameValue + "\n",
+      lastnameValue + "\n",
+      dniInput.value + "\n",
+      locationValue + "\n",
+      adressValue + "\n",
+      telphoneValue + "\n",
+      postaleCodeValue + "\n",
+      emailValue + "\n",
+      passwordValue + "\n",
+      repeatPasswordValue + "\n",
+      birthValue
+    );
+  }
 };

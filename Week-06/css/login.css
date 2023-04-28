@@ -1,5 +1,5 @@
 main {
-  background-image: url('../../Assets/Images/gym.png');
+  background-image: url("../../Assets/Images/gym.png");
   background-repeat: no-repeat;
   position: fixed;
   height: 100%;
@@ -23,12 +23,13 @@ main h2 {
 
 .form-login div {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  color: #373867;
   height: 30px;
   margin: 20px;
 }
 
-.form-login p {
+.help p {
   color: #ff0000;
   font-size: 20px;
 }

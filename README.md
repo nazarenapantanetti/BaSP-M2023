@@ -102,7 +102,7 @@ Contain code inside and parameters that contemplates when executing. It is defin
 Visit the following GitHub pages link to view the result:
 https://nazarenapantanetti.github.io/BaSP-M2023/Week-05/
 
-#Week-06#
+# Week-06
 
 Let's learn about the DOM (Document Object Model). When a web page is loaded, the browser creates a DOM of the page, as a tree of objects, where the branches are de different elements/nodes that make up the page. DOM's job is facilitate a structured representation of the document (tree) and define how programs can access, ir order to modify, both their srtucture, style and content (branches/nodes). It essentially connect web pages to programming languages.
 

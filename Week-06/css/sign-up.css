@@ -1,5 +1,5 @@
 main {
-  background-image: url('../../Assets/Images/gym.png');
+  background-image: url("../../Assets/Images/gym.png");
   background-repeat: no-repeat;
   height: 100%;
 }
@@ -11,6 +11,11 @@ main h1,
   text-align: center;
 }
 
+.form-sign-up h2 {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
 .form-sign-up {
   width: 75%;
   height: 75%;
@@ -20,17 +25,24 @@ main h1,
 
 form p {
   color: #373867;
-  font-size: 20px;
+  font-size: 16px;
+}
+
+.return {
   text-align: end;
 }
 
 .container-inputs {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   max-height: 74%;
 }
 
+#birth-input {
+  min-height: 25px;
+}
 .container-inputs div {
   display: flex;
   flex-direction: column;
@@ -38,9 +50,20 @@ form p {
   margin: 20px;
 }
 
-.container-inputs img {
-  width: 15px;
-  height: 15px;
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button input {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  padding: 10px;
+  width: 100px;
+  background-color: #cc9d42;
+  color: #ffffff;
 }
 
 .ok {
