@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document login</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <script defer src="../js/login.js"></script>
+  </head>
+  <header>
+    <img src="../../Assets/Images/logo-01.png" alt="logo" class="logo-01" />
+  </header>
+  <body>
+    <main>
+      <h1>Sign in</h1>
+      <form class="form-login">
+        <a href="./index.html">Volver</a>
+        <h2>Login</h2>
+        <div class="email-input">
+          <p>Email</p>
+          <input type="email" id="email-input" />
+          <span id="msgErrorEmail" class="ok">invalid email</span>
+        </div>
+        <div class="password-input">
+          <p>Password</p>
+          <input type="password" id="password-input" />
+          <span id="msgErrorPassword" class="ok">invalid password</span>
+        </div>
+        <div class="help">
+          <p>Remember me</p>
+          <p>Forgot password?</p>
+        </div>
+        <div class="buttons">
+          <input type="button" value="Login" id="login-button" />
+          <a href="../views/sign-up.html"
+            ><input type="button" value="Sign up" />
+          </a>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+header {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  top: 0px;
+  width: 100%;
+  height: 5rem;
+  background-color: #373867;
+}
+
+.div1 {
+  display: flex;
+  justify-self: flex-start;
+  margin: 10px;
+}
+
+.div2 {
+  display: inline-block;
+  justify-self: center;
+  padding: 10px;
+}
+
+header p {
+  color: #28b98e;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.logo-01 {
+  margin-bottom: 10px;
+  width: 12rem;
+  height: 3rem;
+}
+
+.logo-02 {
+  width: 2rem;
+  height: 2rem;
+}
+
+@media only screen and (min-width: 600px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header p {
+    display: none;
+  }
+}

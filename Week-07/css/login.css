@@ -1,0 +1,79 @@
+main {
+  background-image: url("../../Assets/Images/gym.png");
+  background-repeat: no-repeat;
+  position: fixed;
+  height: 100%;
+}
+
+main h1,
+main h2 {
+  color: #ffffff;
+  font-size: 34px;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+  height: 75%;
+  background-color: #8e969c;
+  opacity: 90%;
+}
+
+.form-login div {
+  display: flex;
+  flex-direction: column;
+  color: #373867;
+  height: 30px;
+  margin: 20px;
+}
+
+.help p {
+  color: #ff0000;
+  font-size: 20px;
+}
+
+.email-input,
+.password-input {
+  flex-direction: row;
+  justify-items: space-evenly;
+}
+
+.help,
+.buttons {
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons input {
+  padding: 10px;
+  width: 100px;
+  background-color: #cc9d42;
+  color: #ffffff;
+}
+
+form a {
+  display: flex;
+  align-self: self-end;
+  font-size: 20px;
+}
+
+a {
+  color: #373867;
+}
+
+.xError {
+  color: red;
+  font-size: 15px;
+}
+
+.ok {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    top: 80px;
+  }
+}

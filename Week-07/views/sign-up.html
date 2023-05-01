@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document sign-up</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/sign-up.css" />
+    <script defer src="../js/sign-up.js"></script>
+  </head>
+  <header>
+    <img src="../../Assets/Images/logo-01.png" alt="logo" class="logo-01" />
+  </header>
+  <body>
+    <main>
+      <h1>Sign Up</h1>
+      <form class="form-sign-up">
+        <a href="../views/index.html"> <p class="return">Volver</p></a>
+        <h2>Register</h2>
+        <div class="container-inputs">
+          <div>
+            <p>Name</p>
+            <input id="name-input" type="text" placeholder="Name" />
+            <span id="name-span" class="ok">Invalid name</span>
+          </div>
+          <div>
+            <p>Lastname</p>
+            <input id="lastname-input" type="text" placeholder="Last name" />
+            <span id="lastname-span" class="ok">Invalid lastname</span>
+          </div>
+          <div>
+            <p>DNI</p>
+            <input id="dni-input" type="text" placeholder="DNI" />
+            <span id="dni-span" class="ok">Invalid dni</span>
+          </div>
+          <div>
+            <p>Location</p>
+            <input id="location-input" type="text" placeholder="Location" />
+            <span id="location-span" class="ok">Invalid location</span>
+          </div>
+          <div>
+            <p>Adress</p>
+            <input id="adress-input" type="text" placeholder="Adress" />
+            <span id="adress-span" class="ok">Invalid adress</span>
+          </div>
+          <div>
+            <p>Telphone</p>
+            <input id="telphone-input" type="text" placeholder="telphone" />
+            <span id="telphone-span" class="ok">Invalid telphone</span>
+          </div>
+          <div>
+            <p>Postal Code</p>
+            <input
+              id="postal-code-input"
+              type="text"
+              placeholder="Postal code"
+            />
+            <span id="postal-code-span" class="ok">Invalid postal code</span>
+          </div>
+          <div>
+            <p>Email</p>
+            <input id="email-input" type="text" placeholder="Email" />
+            <span id="email-span" class="ok">Invalid email</span>
+          </div>
+          <div>
+            <p>Password</p>
+            <input id="password-input" type="password" placeholder="Password" />
+            <span id="password-span" class="ok">Invalid password</span>
+          </div>
+          <div>
+            <p>Repeat Password</p>
+            <input
+              id="repeat-password-input"
+              type="password"
+              placeholder="Repeat password"
+            />
+            <span id="repeat-password-span" class="ok">unequal password</span>
+          </div>
+          <div>
+            <p>Birthday</p>
+            <input id="birth-input" type="date" placeholder="Birthday" />
+            <span id="birth-span" class="ok">Invalid format</span>
+          </div>
+        </div>
+        <div class="button">
+          <input type="button" id="sign-up-button" value="Sign up" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
