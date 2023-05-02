@@ -54,7 +54,7 @@ var msgErrorPassword = document.getElementById("msgErrorPassword");
 
 function validationLogin() {
   var url =
-    "https://api-rest-server.vercel.app/login?email" +
+    "https://api-rest-server.vercel.app/login?email=" +
     inputEmail.value +
     "&password=" +
     inputPassword.value;
