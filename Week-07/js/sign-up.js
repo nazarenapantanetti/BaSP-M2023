@@ -3,7 +3,7 @@ window.onload = function () {
   var nameInput = document.getElementById("name-input");
   var nameSpan = document.getElementById("name-span");
   var nameValue = nameInput.value;
-  console.log(nameValue + "holaaa"); 
+  console.log(nameValue + "holaaa");
   nameInput.onblur = function () {
     if (
       nameValue.length > 3 &&
@@ -318,15 +318,19 @@ window.onload = function () {
   };
 
   document.getElementById("name-input").value = localStorage.getItem("name");
-};
-localStorage.getItem("lastname", lastnameValue);
-localStorage.getItem("dni", dniInput.value);
-localStorage.getItem("city", locationInput.value);
-localStorage.getItem("address", adressInput.value);
-localStorage.getItem("phone", telphoneInput.value);
-localStorage.getItem("zip", postalCodeValue);
-localStorage.getItem("email", emailValue);
-localStorage.etItem("dob", birthInput.value);
-localStorage.getItem("password", passwordValue);
-
+  document.getElementById("lastname-input").value =
+    localStorage.getItem("lastname");
+  document.getElementById("dni-input").value = localStorage.getItem("dni");
+  document.getElementById("location-input").value =
+    localStorage.getItem("city");
+  document.getElementById("adress-input").value =
+    localStorage.getItem("address");
+  document.getElementById("telphone-input").value =
+    localStorage.getItem("phone");
+  document.getElementById("postal-code-input").value =
+    localStorage.getItem("zip");
+  document.getElementById("email-input").value = localStorage.getItem("email");
+  document.getElementById("password-input").value =
+    localStorage.getItem("password");
+  document.getElementById("birth-input").value = localStorage.getItem("dob");
 };

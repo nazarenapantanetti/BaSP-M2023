@@ -117,3 +117,14 @@ Plus: Requirement PDF: its a simple but important document in which the requirem
 
 Visit the following GitHub pages link to view the result:
 https://nazarenapantanetti.github.io/BaSP-M2023/Week-06/
+
+# Week 07
+
+We learnt about APIs(Application Programming Interface) that comunicate client (front) with data base (back).They are usefull to include new funcionalities in a quickly way, taking advantage of already written code(libraries). They are handled with a request-response interaction.
+
+Javascript is an asynchronous, concurrent and non-blocking programming language which despite not being multitasking, it has the ability to delegate processes through callbacks, promises or events. While functions are executed following the "call stack" order, javascript send pending tasks to a "callback queue" and makes use of the event loop in its only thread of execution, leading to the next task once the previous one has been processed.
+
+In order to set/get the required information in the local storage from login/sign up's URL, we used fetch to call an API. Fetch acts like a promise >> this object represents the eventually "return" of a resulting value from an asychronic operation (which could be succesfully or not). To achieve this, we made use of query params that indicate what particular data we want to manipulate, either create, modify or delete a value.
+
+Visit the following GitHub pages link to view the result:
+https://nazarenapantanetti.github.io/BaSP-M2023/Week-07/
