@@ -2,14 +2,15 @@ window.onload = function () {
   //NAME
   var nameInput = document.getElementById("name-input");
   var nameSpan = document.getElementById("name-span");
-  var nameValue = nameInput.value;
-  console.log(nameValue + "holaaa");
+
   nameInput.onblur = function () {
+    var nameValue = nameInput.value;
     if (
       nameValue.length > 3 &&
       typeof nameValue === "string" &&
       validationNum(nameValue) === false
     ) {
+      return true;
     } else {
       nameSpan.classList.remove("ok");
       nameSpan.classList.add("noOk");
@@ -24,8 +25,9 @@ window.onload = function () {
   //LAST NAME
   var lastnameInput = document.getElementById("lastname-input");
   var lastnameSpan = document.getElementById("lastname-span");
-  var lastnameValue = lastnameInput.value;
+
   lastnameInput.onblur = function () {
+    var lastnameValue = lastnameInput.value;
     if (
       lastnameValue.length > 3 &&
       typeof lastnameValue === "string" &&
@@ -72,8 +74,9 @@ window.onload = function () {
   //LOCATION
   var locationInput = document.getElementById("location-input");
   var locationSpan = document.getElementById("location-span");
-  var locationValue = locationInput.value;
+
   locationInput.onblur = function () {
+    var locationValue = locationInput.value;
     if (locationValue.length > 3) {
     } else {
       locationSpan.classList.remove("ok");
@@ -90,8 +93,9 @@ window.onload = function () {
 
   var adressInput = document.getElementById("adress-input");
   var adressSpan = document.getElementById("adress-span");
-  var adressValue = adressInput.value;
+
   adressInput.onblur = function () {
+    var adressValue = adressInput.value;
     var hasSpaceInMiddle = false;
     for (var i = 0; i < adressValue.length - 1; i++) {
       if (adressValue[i] === " ") {
@@ -114,7 +118,7 @@ window.onload = function () {
   var telphoneSpan = document.getElementById("telphone-span");
 
   telphoneInput.onblur = function () {
-    if (telphoneInput.value.length !== 10 || telphoneInput.value !== "number") {
+    if (telphoneInput.value.length !== 10 || isNaN(telphoneInput.value)) {
       telphoneSpan.classList.remove("ok");
       telphoneSpan.classList.add("noOk");
     }
@@ -127,8 +131,9 @@ window.onload = function () {
   //POSTAL CODE
   var postalCodeInput = document.getElementById("postal-code-input");
   var postalCodeSpan = document.getElementById("postal-code-span");
-  var postalCodeValue = postalCodeInput.value;
+
   postalCodeInput.onblur = function () {
+    var postalCodeValue = postalCodeInput.value;
     if (
       !isNaN(postalCodeValue) &&
       postalCodeValue.length >= 4 &&
@@ -166,17 +171,22 @@ window.onload = function () {
   //PASSWORD
   var passwordInput = document.getElementById("password-input");
   var passwordSpan = document.getElementById("password-span");
-  var passwordValue = passwordInput.value;
+
   passwordInput.onblur = function () {
+    var passwordValue = passwordInput.value;
     var hasNumber = false;
+    var hasUpperLetter = false;
 
     for (var i = 0; i < passwordValue.length; i++) {
       if (passwordValue[i] >= "0" && passwordValue[i] <= "9") hasNumber = true;
+      else if (passwordValue[i] === passwordValue[i].toUpperCase())
+        hasUpperLetter = true;
     }
 
     if (
       typeof passwordValue !== "string" ||
       hasNumber === false ||
+      hasUpperLetter === false ||
       passwordValue.length < 8
     ) {
       passwordSpan.classList.remove("ok");
@@ -194,7 +204,7 @@ window.onload = function () {
   var repeatPasswordSpan = document.getElementById("repeat-password-span");
   var repeatPasswordValue = repeatPasswordInput.value;
   repeatPasswordInput.onblur = function () {
-    if (passwordInput.value !== repeatPasswordValue) {
+    if (passwordInput.value !== repeatPasswordInput.value) {
       repeatPasswordSpan.classList.remove("ok");
       repeatPasswordSpan.classList.add("noOk");
     }
@@ -223,17 +233,17 @@ window.onload = function () {
   };
 
   function convertBirth(date) {
-    var day = date.substring(0, 2);
-    var month = date.substring(2, 4);
-    var year = date.substring(4);
-    var newDate = year + month + day;
+    var day = date.substring(8, 10);
+    var month = date.substring(5, 7);
+    var year = date.substring(0, 4);
+    var newDate = month + "/" + day + "/" + year;
+
     return newDate;
   }
 
   //BUTTON
 
   var buttonInput = document.getElementById("sign-up-button");
-  var buttonSpan = document.getElementById("sign-up-span");
 
   function validationEmpty() {
     var input = document.getElementsByTagName("input");
@@ -251,25 +261,25 @@ window.onload = function () {
     var errorList = "";
     var url =
       "https://api-rest-server.vercel.app/signup?name=" +
-      nameValue +
-      "&lastname=" +
-      lastnameValue +
+      nameInput.value +
+      "&lastName=" +
+      lastnameInput.value +
       "&dni=" +
       dniInput.value +
       "&city=" +
-      locationValue +
+      locationInput.value +
       "&address=" +
-      adressValue +
+      adressInput.value +
       "&phone=" +
       telphoneInput.value +
       "&zip=" +
-      postalCodeValue +
+      postalCodeInput.value +
       "&dob=" +
       convertBirth(birthInput.value) +
       "&email=" +
       emailInput.value +
       "&password=" +
-      passwordValue;
+      passwordInput.value;
 
     for (i = 0; i < span.length; i++) {
       if (span[i].classList.contains("noOk")) {
@@ -282,35 +292,38 @@ window.onload = function () {
           return response.json();
         })
 
-        .then(function (success) {
-          alert(
-            success.msg + "\n",
-            nameValue + "\n",
-            lastnameValue + "\n",
-            locationInput.value + "\n",
-            adressInput.value + "\n",
-            telphoneInput.value + "\n",
-            postalCodeValue + "\n",
-            emailValue + "\n",
-            birthInput.value + "\n",
-            passwordValue + "\n"
-          );
-
+        .then(function (data) {
           if (data.success === true) {
-            localStorage.setItem("name", nameValue);
-            localStorage.setItem("lastname", lastnameValue);
+            alert(
+              data.msg + "\n",
+              nameInput.value + "\n",
+              lastnameInput.value + "\n",
+              locationInput.value + "\n",
+              adressInput.value + "\n",
+              telphoneInput.value + "\n",
+              postalCodeInput.value + "\n",
+              emailInput.value + "\n",
+              birthInput.value + "\n",
+              passwordInput.value + "\n"
+            );
+
+            localStorage.setItem("name", nameInput.value);
+            localStorage.setItem("lastName", lastnameInput.value);
             localStorage.setItem("dni", dniInput.value);
             localStorage.setItem("city", locationInput.value);
             localStorage.setItem("address", adressInput.value);
             localStorage.setItem("phone", telphoneInput.value);
-            localStorage.setItem("zip", postalCodeValue);
-            localStorage.setItem("email", emailValue);
+            localStorage.setItem("zip", postalCodeInput.value);
+            localStorage.setItem("email", emailInput.value);
             localStorage.setItem("dob", birthInput.value);
-            localStorage.setItem("password", passwordValue);
+            localStorage.setItem("password", passwordInput.value);
+            localStorage.setItem("repeatPassword", repeatPasswordInput.value);
+          } else {
+            throw data.errors[0].msg;
           }
         })
         .catch(function (errors) {
-          alert(errors.msg);
+          alert(errors);
         });
     } else {
       alert(errorList + "\n");
@@ -319,7 +332,7 @@ window.onload = function () {
 
   document.getElementById("name-input").value = localStorage.getItem("name");
   document.getElementById("lastname-input").value =
-    localStorage.getItem("lastname");
+    localStorage.getItem("lastName");
   document.getElementById("dni-input").value = localStorage.getItem("dni");
   document.getElementById("location-input").value =
     localStorage.getItem("city");
@@ -332,5 +345,7 @@ window.onload = function () {
   document.getElementById("email-input").value = localStorage.getItem("email");
   document.getElementById("password-input").value =
     localStorage.getItem("password");
+  document.getElementById("repeat-password-input").value =
+    localStorage.getItem("repeatPassword");
   document.getElementById("birth-input").value = localStorage.getItem("dob");
 };

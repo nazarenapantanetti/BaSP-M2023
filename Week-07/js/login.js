@@ -24,6 +24,7 @@ var inputPassword = document.getElementById("password-input");
 function validationPassword() {
   var password = inputPassword.value;
   var hasSmallLetter = false;
+  var hasUpperLetter = false;
   var hasNumber = false;
 
   for (var i = 0; i < password.length; i++) {
@@ -32,9 +33,11 @@ function validationPassword() {
       hasNumber = true;
     } else if (char === char.toLowerCase()) {
       hasSmallLetter = true;
+    } else if (char === char.toUpperCase()) {
+      hasUpperLetter = true;
     }
   }
-  if (!hasSmallLetter || !hasNumber) {
+  if (!hasSmallLetter || !hasNumber || !hasUpperLetter) {
     inputPassword.classList.add("xError");
     return false;
   }
@@ -64,12 +67,16 @@ function validationLogin() {
         return response.json();
       })
 
-      .then(function (success) {
-        alert(success.msg);
+      .then(function (data) {
+        if (data.success === true) {
+          alert(data.msg);
+        } else {
+          throw data.errors[0].msg;
+        }
       })
 
       .catch(function (errors) {
-        alert(errors.msg);
+        alert(errors);
       });
   } else {
     alert("invalid format");
